@@ -2,6 +2,8 @@ import React from "react";
 import PropTypes from "prop-types";
 import { withStyles } from "@material-ui/core/styles";
 import TextField from "@material-ui/core/TextField";
+import Categories from "../../Data/Categories";
+import { MenuItem } from "@material-ui/core";
 
 const styles = {
   input: {
@@ -23,7 +25,13 @@ function CustomizedInputs(props) {
       InputProps={{
         className: classes.input
       }}
-    />
+      >{
+                        Categories.map((cat) => (
+                            <MenuItem key={cat.category} value={cat.value}>{cat.category}</MenuItem>
+                        ))
+                    }
+
+          </TextField>
   );
 }
 

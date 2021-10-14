@@ -1,6 +1,9 @@
 import Textfield from './Textfield'
 import Dropdown from './Dropdown'
 import './Home.css'
+import Categories from '../../Data/Categories'
+import { MenuItem } from '@material-ui/core'
+
 const Home = () => {
     return (
         <div className='content'>
@@ -8,7 +11,9 @@ const Home = () => {
                 <span style={{ color: 'white', fontSize: 30 }}>Quiz Settings</span>
                 <div className='settings__select'>
                     <Textfield />
-                    <Dropdown/>
+                    <Dropdown />
+                    
+                    
                 </div>
             </div>
 

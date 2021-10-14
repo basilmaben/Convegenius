@@ -15,7 +15,7 @@ function CustomizedInputs(props) {
   return (
     <TextField
       label="Enter Your Name"
-      variant="outlined"
+      variant="filled"
       focused
       className={classes.root}
       InputProps={{
