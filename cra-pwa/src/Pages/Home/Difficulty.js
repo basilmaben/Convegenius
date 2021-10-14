@@ -17,19 +17,25 @@ function CustomizedInputs(props) {
   return (
       <TextField
       select
-      label="Select Category"
+      label="Select Difficulty"
       variant="outlined"
-          focused
-          style={{marginBottom:30}}
+      focused
+      style={{marginBottom:30}}
       className={classes.root}
       InputProps={{
         className: classes.input
       }}
-      >{
-                        Categories.map((cat) => (
-                            <MenuItem key={cat.category} value={cat.value}>{cat.category}</MenuItem>
-                        ))
-                    }
+          
+      >
+          <MenuItem key='Easy' value='easy'>
+              Easy
+          </MenuItem>
+          <MenuItem key='Medium' value='medium'>
+              Medium
+          </MenuItem>
+          <MenuItem key='Hard' value='hard'>
+              Hard
+          </MenuItem>
 
           </TextField>
   );

@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 import PropTypes from "prop-types";
 import { withStyles } from "@material-ui/core/styles";
 import TextField from "@material-ui/core/TextField";
@@ -10,12 +10,14 @@ const styles = {
 };
 
 function CustomizedInputs(props) {
+
   const { classes } = props;
 
   return (
     <TextField
+      style={{marginBottom:30}}
       label="Enter Your Name"
-      variant="filled"
+      variant="outlined"
       focused
       className={classes.root}
       InputProps={{
